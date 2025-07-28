@@ -1,0 +1,31 @@
+Salesforce-specific files
+*.log
+*.tmp
+.sfdx
+.idea
+.vscode
+*.bak
+node_modules/
+coverage/
+package-lock.json
+*.zip
+*.jar
+*.class
+.env
+.env.*
+
+VS Code project settings
+.vscode/
+.settings/
+
+OS-specific files
+.DS_Store
+Thumbs.db
+
+Scratch Org definition files
+config/project-scratch-def.json
+
+Deployment files
+deploy/
+build/
+
