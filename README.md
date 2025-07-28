@@ -56,3 +56,46 @@ Edit
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📋 Expected Output
+
+After deploying the metadata to a Salesforce Developer Org:
+
+### 📝 1. Creating a Complaint Record
+
+- Navigate to **App Launcher → Complaint**
+- Click **New Complaint**
+- Fill in:
+  - `Category__c`: `Technical`
+  - `Description__c`: `Wi-Fi not working`
+  - Leave `Assigned_To__c` empty
+- Click **Save**
+
+### ⚙️ 2. Trigger Behavior (Automated)
+
+- The **`ComplaintTrigger`** is fired on insert.
+- It calls `ComplaintHandler.cls`, which checks if `Assigned_To__c` is blank.
+- If blank, it **auto-fills** `Assigned_To__c` with:
+"Default Support Agent"
+
+shell
+Copy
+Edit
+
+### ✅ 3. Result in the UI
+
+| Field              | Value                     |
+|--------------------|---------------------------|
+| Complaint Name     | Auto-generated (e.g., C-001) |
+| Category__c        | Technical                 |
+| Description__c     | Wi-Fi not working         |
+| **Assigned_To__c** | **Default Support Agent** ✅ |
+
+### 🧪 4. Running the Test Class
+
+- Go to **Setup → Apex Test Execution**
+- Select `ComplaintHandlerTest`
+- Click **Run**
+
+#### Expected:
+- ✔️ Test runs successfully
+- 📈 Code coverage: **100%** for Apex logic
