@@ -1,47 +1,58 @@
-# **Salesforce Complaint Management System**
+# Salesforce Complaint Management
 
-Salesforce project to automate complaint tracking and SLA-based escalation using Apex, Flows, and Custom Objects.
+A Salesforce-based solution to track, manage, and resolve customer complaints efficiently. Built using Salesforce DX, Apex, Flows, and Lightning Components to demonstrate strong hands-on knowledge of the Salesforce platform.
 
-## ** Features**
-- Custom Objects: `Complaint__c`, `Product__c`
-- Flow for auto-assignment and escalation logic
-- Apex Trigger to check SLA based on complaint date
-- SOQL queries for unresolved complaint reporting
-- Deployed via Change Sets in sandbox
+## 🔧 Features
 
-## ** Highlights**
-- Apex Triggers & Test Classes
-- Flow Builder & Automation
-- Custom Metadata & Picklists
-- SOQL, Debug Logs, and Deployment
+- Complaint capture using standard/custom objects  
+- Workflow automation with Flows and Process Builder  
+- Apex trigger to assign complaints based on category  
+- ComplaintHandler Apex class to manage routing logic  
+- Test class with >75% coverage to ensure deployment readiness  
+- Lightning App Page for simplified UI access  
 
-## ** Folder Structure**
-- `metadata/objects/` – Custom objects
-- `metadata/apex/` – Apex classes & triggers
-- `metadata/flows/` – Flow definitions
-- `metadata/test-classes/` – Test classes
-- `screenshots/` – Flow and UI screenshots
+## 🧠 Technologies & Tools
 
-## ** .gitignore Recommendation**
-```gitignore
-*.log
-*.tmp
-.sfdx
-.idea
-.vscode
-*.bak
-node_modules/
-coverage/
-package-lock.json
-*.zip
-*.jar
-*.class
-.env
-.env.*
-.vscode/
-.settings/
-.DS_Store
-Thumbs.db
-config/project-scratch-def.json
-deploy/
-build/
+- Salesforce DX (SFDX)  
+- Apex Classes & Triggers  
+- Lightning App Builder  
+- Flows & Process Builder  
+- Git & GitHub  
+- Visual Studio Code with Salesforce Extensions  
+
+## 📂 Project Structure
+
+salesforce-complaint-management/
+│
+├── force-app/
+│ └── main/
+│ └── default/
+│ ├── classes/
+│ │ ├── ComplaintHandler.cls
+│ │ └── ComplaintHandlerTest.cls
+│ ├── triggers/
+│ │ └── ComplaintTrigger.trigger
+│ ├── objects/
+│ │ └── Complaint__c.object-meta.xml
+│ └── workflows/
+│ └── Complaint_Workflow.workflow-meta.xml
+│
+├── .gitignore
+├── README.md
+└── sfdx-project.json
+
+markdown
+Copy
+Edit
+
+## ✅ Key Skills Demonstrated
+
+- Salesforce platform development & customization  
+- Apex logic and trigger handling  
+- Test class development  
+- Git-based source tracking  
+- Real-time business scenario implementation  
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

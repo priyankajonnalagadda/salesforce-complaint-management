@@ -1,3 +1,4 @@
+# Salesforce-specific files
 *.log
 *.tmp
 .sfdx
@@ -12,10 +13,10 @@ package-lock.json
 *.class
 .env
 .env.*
-.vscode/
 .settings/
 .DS_Store
 Thumbs.db
 config/project-scratch-def.json
 deploy/
 build/
+
